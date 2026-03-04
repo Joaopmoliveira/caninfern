@@ -5,7 +5,7 @@ At some point, after a ton of meetings discussing how to write a control loop th
 I went back into hibernation and came up with the Caninfern architecture. 
 The software itself is fairly simple, you have three distinct processes, namely: 
 a sensor reader; a watchdog; a controller. For the more observant, caninfern derives from "canine inferno", 
-which roughly translates to dog from hell, the mitological Cerberus, 
+which roughly translates to dog from hell, the mitological Cerberus with three heads, 
 similar to the proposed architecture. 
 
 The watchdog is like a maestro, 
