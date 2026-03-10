@@ -1,0 +1,31 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Debug",
+            "displayName": "Debug",
+            "generator": "Ninja",
+            "binaryDir": "build/debug"
+        },
+        {
+            "name": "Release",
+            "displayName": "Release",
+            "generator": "Ninja",
+            "binaryDir": "build/release"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Release",
+            "description": "Compile project in release mode",
+            "displayName": "",
+            "configurePreset": "Release"
+        },
+        {
+            "name": "Debug",
+            "description": "Compile project in debug mode",
+            "displayName": "",
+            "configurePreset": "Debug"
+        }
+    ]
+}

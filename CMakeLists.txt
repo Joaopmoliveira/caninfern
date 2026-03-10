@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.28)
+
 project(caninfern)
 
 # caninfern is heavily dependent on ASIO. Hence we directly include it as a
