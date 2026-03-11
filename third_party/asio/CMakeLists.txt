@@ -1,9 +1,5 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.28)
 
-##
-## PROJECT
-## name and version
-##
 project(asio VERSION 1.0)
 
 set(ASIO_BUILD_INTERFACE "${CMAKE_CURRENT_LIST_DIR}/include/")

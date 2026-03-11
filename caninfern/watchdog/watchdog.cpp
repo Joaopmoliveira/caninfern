@@ -1,4 +1,4 @@
-#include <asio.hpp>
+#include "asio.hpp"
 #include <ctime>
 #include <chrono>
 #include <iostream>
@@ -62,7 +62,7 @@ void read_client_acknowledgment(Client& ref);
 
 void write_control(Client& client){
   //std::cout << "write control\n";
-  client.timer.expires_from_now(maximum_delay_in_milliseconds);
+  client.timer.expires_after(maximum_delay_in_milliseconds);
   client.timer.async_wait([&](asio::error_code ec) { // handles what happens when timer ends
     if(client.data_sent){
       client.data_sent = false;
